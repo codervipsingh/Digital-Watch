@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Digital Watch || Virendra</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+           background-image:url(./8c7aa7a7-41e7-4b8f-8df2-c0aa63a4c7ee.jpeg) ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font: bold 12px arial, helvetica, sans-serif;
+          
+        }
+        .clock{
+            border: 1 px solid #606060;
+            color:white;
+            border-radius: 5px;
+            /* background-color: #ea7474; */
+            width: 480px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 150px;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #date{
+            font-size: 20px !important;
+            text-align: center;
+        }
+        .clock ul {
+            list-style: none;
+            display: flex;
+            font-size: 90px;
+            gap: 15px;
+        }
+        #date{
+           color: rgb(127, 66, 168);
+           font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        #hours,#min,#sec{
+            width: 100px;
+    height: 80px;
+    background: slateblue;
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        #point{
+            color: rgb(128, 10, 85);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="clock">
+            <div id="date">Monday 13 November 2023</div>
+            <ul>
+                <li id="hours">05</li>
+                <li id="min">07</li>
+                <li id="sec">10</li>
+            </ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</html>
